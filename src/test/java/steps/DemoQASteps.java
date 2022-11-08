@@ -12,8 +12,8 @@ public class DemoQASteps {
         demoqa.navigateToDemoQA();
     }
 
-    @And("^select a value from the dropdown$")
-    public void selectFromDropDown(){
-        demoqa.selectCategory("Blue");
+    @And("^select {string} from the dropdown$")
+    public void selectFromDropDown(String color){
+        demoqa.selectCategory(color);
     }
 }
