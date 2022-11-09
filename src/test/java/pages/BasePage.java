@@ -49,6 +49,7 @@ public class BasePage {
         return wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(locator)));
     }
 
+    // ******************** BASIC ACTIONS ********************
     // Como el click es un método extremadamente usado, lo definieroms en esta base Page pasandole como parámetro el
     // webElement que retorna la funcion de arriba.
     public void clickElement(String locator) {
@@ -75,6 +76,7 @@ public class BasePage {
         dropdown.selectByVisibleText(textToSelect);
     }
 
+    // ******************** HOVER - DOUBLE CLICK - RIGHT CLICK ********************
     // Definimos más actions comunes sobre los webelements: es decir, hover over, doble click y click derecho
     public void hoverOverElement(String locator) {
         action.moveToElement(Find(locator));
@@ -88,6 +90,7 @@ public class BasePage {
         action.contextClick(Find(locator));
     }
 
+    // ******************** TABLES ********************
     public String getValueFromTable(String locator, int row, int column) {
         String cellNeed = locator+"/table/tbody/tr["+row+"]/td["+column+"]";
         return Find(cellNeed).getText();
@@ -95,10 +98,21 @@ public class BasePage {
 
     // Funcionará obviamente para tablas con celdas editables
     public void setValueOnTable(String locator, int row, int column, String stringToSend){
-
         String cellToFill = locator+"/table/tbody/tr["+row+"]/td["+column+"]";
         Find(cellToFill).sendKeys(stringToSend);
+    }
 
+    // ******************** IFRAME AND ALERTS ********************
+    public void switchToiFram(int iFrameIndex){
+        driver.switchTo().frame(iFrameIndex);
+    }
+
+    public void switchToParentFrame(){
+        driver.switchTo().parentFrame();
+    }
+
+    public void dismissAlert(){
+        driver.switchTo().alert().dismiss();
     }
 
 }
