@@ -29,10 +29,10 @@ public class BasePage {
 
     //Constructor
     public BasePage(WebDriver driver) {
-
         BasePage.driver = driver;
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-
+        // [[[*]]] esto es el wait IMPLISCITO PURO que no es recomendable usar ya que va a esperar esos 10 segundos para cada accion.
+        // driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
 
     public static void navigateTo(String url) {
@@ -41,49 +41,64 @@ public class BasePage {
 
     // No quiero instanciar los webelements desde cada pagina sino que lo quiero hacer una sola vez desde aqui
     // y luego, usar la herencia
-    private WebElement Find(String locator){
+    private WebElement Find(String locator) {
         // Aqui seteamos un wait general que va a hacer que espere hasta que el elemento sea visible o que alcance el limite de 10 segundos que seteamos más arriba.
+        // Esta es un tipico wait EXPLISCITO si se declara en cada instanciacion, pero la hemos hecho IMPLISCITA  ya que al estar en la BASEPAGE, se ejecutará de manera
+        // global cada vez que sea heredada. Pero es solo implscita en el sentido que es una espera global. Una espera implscita pura es la que vemos en [[[*]]] más arriba.
         // <<*>> Esto obviamente nos limita a usar la localizancion mediante XPATH
         return wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(locator)));
     }
 
     // Como el click es un método extremadamente usado, lo definieroms en esta base Page pasandole como parámetro el
     // webElement que retorna la funcion de arriba.
-    public void clickElement(String locator){
+    public void clickElement(String locator) {
         Find(locator).click();
     }
 
-    public void write(String locator, String textToWrite){
+    public void write(String locator, String textToWrite) {
         Find(locator).clear();
         Find(locator).sendKeys(textToWrite);
     }
 
-    public void selectFromDropDownByValue(String locator, String valueToSelect){
-        Select dropdown = new Select (Find(locator));
+    public void selectFromDropDownByValue(String locator, String valueToSelect) {
+        Select dropdown = new Select(Find(locator));
         dropdown.selectByValue(valueToSelect);
     }
 
-    public void selectFromDropDownByIndex(String locator, int valueToSelect){
-        Select dropdown = new Select (Find(locator));
+    public void selectFromDropDownByIndex(String locator, int valueToSelect) {
+        Select dropdown = new Select(Find(locator));
         dropdown.selectByIndex(valueToSelect);
     }
 
-    public void selectFromDropDownByText(String locator, String textToSelect){
-        Select dropdown = new Select (Find(locator));
+    public void selectFromDropDownByText(String locator, String textToSelect) {
+        Select dropdown = new Select(Find(locator));
         dropdown.selectByVisibleText(textToSelect);
     }
 
     // Definimos más actions comunes sobre los webelements: es decir, hover over, doble click y click derecho
-    public void hoverOverElement(String locator){
+    public void hoverOverElement(String locator) {
         action.moveToElement(Find(locator));
     }
 
-    public void doubleClick(String locator){
+    public void doubleClick(String locator) {
         action.doubleClick(Find(locator));
     }
 
-    public void rightClick(String locator){
+    public void rightClick(String locator) {
         action.contextClick(Find(locator));
+    }
+
+    public String getValueFromTable(String locator, int row, int column) {
+        String cellNeed = locator+"/table/tbody/tr["+row+"]/td["+column+"]";
+        return Find(cellNeed).getText();
+    }
+
+    // Funcionará obviamente para tablas con celdas editables
+    public void setValueOnTable(String locator, int row, int column, String stringToSend){
+
+        String cellToFill = locator+"/table/tbody/tr["+row+"]/td["+column+"]";
+        Find(cellToFill).sendKeys(stringToSend);
+
     }
 
 }
