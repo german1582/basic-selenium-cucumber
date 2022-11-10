@@ -1,5 +1,6 @@
 package pages;
 
+import org.openqa.selenium.NoSuchContextException;
 import org.openqa.selenium.WebElement;
 
 import java.util.ArrayList;
@@ -9,6 +10,8 @@ public class ListPage extends BasePage {
 
     private String searchField = "//body/form[1]/input[1]";
     private String searchResults = "name";
+
+    private String nonExistingElement = "//a[@name='itDoesNotExist']";
 
     public ListPage() {
         super(driver);
@@ -32,5 +35,14 @@ public class ListPage extends BasePage {
             stringsFromList.add(e.getText());
         }
         return stringsFromList;
+    }
+
+    public void clickOnNonExistingElement(){
+        try {
+            clickElement(nonExistingElement);
+        } catch (NoSuchContextException e) {
+            System.out.println("Web element was not found");
+            e.printStackTrace();
+        }
     }
 }

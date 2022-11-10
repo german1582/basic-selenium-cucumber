@@ -21,8 +21,3 @@ Feature: Test different actions on a sandbox page.
     When I search the list
     Then I print all results
     Then I can find the text in the list
-
-  @Error
-  Scenario: As a Test Engineer, I want to validate that a proper error message is displayed
-    Given I navigate to the list page
-    Then I click on a non existing element and print a customized error message

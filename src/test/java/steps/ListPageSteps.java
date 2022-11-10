@@ -36,4 +36,9 @@ public class ListPageSteps {
     public void printAllResults() {
         System.out.println("All string elements showed for the search: " + list.getAllSearchResults());
     }
+
+    @Then("I click on a non existing element and print a customized error message")
+    public void treatNonExistingElement() {
+        list.clickOnNonExistingElement();
+    }
 }
