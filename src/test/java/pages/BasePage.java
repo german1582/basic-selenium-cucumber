@@ -40,6 +40,10 @@ public class BasePage {
         driver.get(url);
     }
 
+    public static void closeBrowser(){
+        driver.quit();
+    }
+
     // No quiero instanciar los webelements desde cada pagina sino que lo quiero hacer una sola vez desde aqui
     // y luego, usar la herencia
     private WebElement Find(String locator) {
