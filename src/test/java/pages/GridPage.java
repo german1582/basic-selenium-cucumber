@@ -2,6 +2,7 @@ package pages;
 
 public class GridPage extends BasePage{
     private String cell = "//*[@id='root']/div";
+    private String mainTable = "//*[@id='root']/div/table";
 
     public GridPage(){
         super(driver);
@@ -17,5 +18,9 @@ public class GridPage extends BasePage{
 
     public void editValueOfACell (int row, int column, String textForEdit){
         setValueOnTable(cell, row, column,textForEdit);
+    }
+
+    public boolean cellStatus(){
+        return elementIsDisplayed(mainTable);
     }
 }

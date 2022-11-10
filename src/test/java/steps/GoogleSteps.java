@@ -1,6 +1,7 @@
 package steps;
 
 import io.cucumber.java.en.*;
+import org.junit.Assert;
 import pages.GooglePage;
 
 public class GoogleSteps {
@@ -24,6 +25,6 @@ public class GoogleSteps {
 
     @Then("^results match the criteria$")
     public void validateResults(){
-
+        Assert.assertEquals("Argentina.gob.ar: Inicio", google.firstResult());
     }
 }

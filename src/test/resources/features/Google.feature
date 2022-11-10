@@ -1,5 +1,6 @@
 Feature: Test Google search functionality
 
+  @Ger1
     Scenario: As a user I enter a search criteria in Goggle
 
       Given I am on the Google search page

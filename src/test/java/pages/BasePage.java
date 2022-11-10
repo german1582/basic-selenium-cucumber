@@ -115,4 +115,28 @@ public class BasePage {
         driver.switchTo().alert().dismiss();
     }
 
+    // ******************* RETURNING DATA FOR ASSERTIONS ********************
+
+    // Esta funcion devuelve un texto y tiene como finalidad definir aqui solamente esa responsabilidad de devolver el texto
+    // para que los assertions no esten aqui. Tampoco es buena práctica que los asserts esten en la pagina del POM ya que ellas
+    // solo deben ser utilizadas para modelar la pagina y no para hacer validaciones. Lo idea es que los asserts vayan en los step definitions.
+
+    // Para validar text de un elemento
+    public String textFromElement(String locator){
+        return Find(locator).getText();
+    }
+
+    // Para validar si un elemento es visible o no
+    public boolean elementIsDisplayed(String locator){
+        return Find(locator).isDisplayed();
+    }
+
+    public boolean elementIsSelected(String locator){
+        return Find(locator).isSelected();
+    }
+
+    public boolean elementIsEnabled(String locator){
+        return Find(locator).isEnabled();
+    }
+
 }
