@@ -11,6 +11,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
+import java.util.List;
 
 public class BasePage {
     // static hace que haya un solo valor para todas las instancias de esta clase.
@@ -137,6 +138,11 @@ public class BasePage {
 
     public boolean elementIsEnabled(String locator){
         return Find(locator).isEnabled();
+    }
+
+    // ******************* LISTS ********************
+    public List<WebElement> bringMeAllElements(String locator){
+        return driver.findElements(By.className(locator));
     }
 
 }
