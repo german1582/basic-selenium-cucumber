@@ -33,3 +33,9 @@ dependencies {
     testImplementation group: 'org.slf4j', name: 'slf4j-simple', version: '2.0.3'
 
 }
+// test es una tarea equivalente a los scripts de NPM. luego, se ejecuta en la terminal por la siguiente linea de comando:
+// $gradle test –Dcucumber.options="—tags @Ger"
+// para varios tags: –Dcucumber.options="—tags @Ger",—tags @Smoke"
+test{
+    systemProperty "cucumber.options", System.getProperty("cucumber.options")
+}
