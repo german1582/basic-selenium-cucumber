@@ -21,11 +21,11 @@ public class ListPage extends BasePage {
         navigateTo("https://andreidbr.github.io/JS30/06AjaxTypeAhead/index.html");
     }
 
-    public void enterSearchCriteria() throws InterruptedException {
+    public void enterSearchCriteria(String state) throws InterruptedException {
         // es mala practica pero en este caso es necesario ya que sin el sleep, esta lista en particular, funciona de tal manera que
         // escribe directamente sin traer todas las opciones que necesitamos para popular nuestra lista.
         Thread.sleep(600);
-        write(searchField, "Washington");
+        write(searchField, state);
     }
 
     public List<String> getAllSearchResults() {

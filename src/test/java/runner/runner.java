@@ -8,9 +8,10 @@ import pages.BasePage;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        tags = "@Ger",
+        tags = "@Lists",
         plugin = {"pretty"},
         features = "src/test/resources/features",
+        monochrome = true,
         glue = "steps"
 )
 
