@@ -9,7 +9,10 @@ import pages.BasePage;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         tags = "@Lists",
-        plugin = {"pretty"},
+        plugin = { "pretty",
+                "json:target/cucumber-reports/cucumber.json",
+                "html:target/cucumber-reports/cucumberreport.html",
+                "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
         features = "src/test/resources/features",
         monochrome = true,
         glue = "steps"

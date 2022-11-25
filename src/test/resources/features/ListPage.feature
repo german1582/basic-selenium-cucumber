@@ -7,10 +7,11 @@ Feature: Test different actions on a list Page
     Then I print all results
     Then I can find <city> in the list
     Examples:
-      | state      | city                |
-      | Washington | Seattle, Washington |
-      | Illinois   | Chicago, Illinois   |
-      | Texas      | Dallas, Texas       |
+      | state              | city                |
+      | Washington         | Seattle, Washington |
+      | Illinois           | Chicago, Illinois   |
+      | Texas              | Dallas, Texas       |
+      | La Vizcachera Town | La Vizcachera, Cba  |
 
 
   @Error
