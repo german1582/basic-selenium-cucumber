@@ -81,6 +81,10 @@ public class BasePage {
         dropdown.selectByVisibleText(textToSelect);
     }
 
+    public void goToLinkText(String linkText) {
+        driver.findElement(By.linkText(linkText)).click();
+    }
+
     // ******************** HOVER - DOUBLE CLICK - RIGHT CLICK ********************
     // Definimos más actions comunes sobre los webelements: es decir, hover over, doble click y click derecho
     public void hoverOverElement(String locator) {

@@ -50,7 +50,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>nov. 25, 2022 03:30:14 p. m.</span>
+			<span class='label blue darken-3 suite-start-time'>dic. 5, 2022 03:11:55 p. m.</span>
 			</a>
 		</ul>
 	</div>
@@ -77,7 +77,7 @@
 				<i class='material-icons'>local_offer</i> Category
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
-					<li><a href='#'>@Lists</a></li>
+					<li><a href='#'>@challenge</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -137,12 +137,12 @@
                     <canvas id='child-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='75%'>
-                    <span class='strong'>3</span> scenarios passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='33%'>
+                    <span class='strong'>1</span> scenarios passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='25%'>
-                    1</span> scenarios failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='66%'>
+                    2</span> scenarios failed, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> skipped, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
@@ -157,14 +157,14 @@
                     <canvas id='grandchild-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='94%'>
-                    <span class='strong'>16</span> steps passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='76%'>
+                    <span class='strong'>13</span> steps passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='5%'>
-                    1</span> steps failed, 
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
-                    0</span> skipped, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='11%'>
+                    2</span> steps failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='11%'>
+                    2</span> skipped, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> others
                 </div>
@@ -187,8 +187,8 @@
 			<ul id='test-collection' class='test-collection'>
 				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>Test different actions on a list Page</span>
-						<span class='test-time'>nov. 25, 2022 03:30:15 p. m.</span>
+						<span class='test-name'>Challenge of last class</span>
+						<span class='test-time'>dic. 5, 2022 03:11:58 p. m.</span>
 						<span class='test-status right fail'>Fail</span>
 					</div>
 					<div class='test-content hide'>
@@ -201,127 +201,148 @@
 
 <div class='scenario outline node' test-id='2' status='fail'>
 
-	<span class='duration right label'>00 00 17.011</span>
+	<span class='duration right label'>00 02 30.077</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario Outline: As a Test Engineer, I want to validate that a text is present inside the list.</div>
+		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario Outline: Challenge of last class</div>
 	</div>
 	
-		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>state</td><td>city</td></tr><tr><td>Washington</td><td>Seattle, Washington</td></tr><tr><td>Illinois</td><td>Chicago, Illinois</td></tr><tr><td>Texas</td><td>Dallas, Texas</td></tr><tr><td>La Vizcachera Town</td><td>La Vizcachera, Cba</td></tr></table></div>
+		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>Product</td></tr><tr><td>alexa</td></tr><tr><td>playstation</td></tr><tr><td>laptop dell</td></tr></table></div>
 	
 	
 	<ul class='steps'>
 		<li test-id='3' class='node scenario Pass' status='Pass'>
-			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>As a Test Engineer, I want to validate that a text is present inside the list.</div>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Challenge of last class</div>
 
 				<div class='category-list'>
-						<span class='category label'>@Lists</span>
+						<span class='category label'>@challenge</span>
 				</div>
 
 			<ul class='gc steps'>
 				<li test-id='4' class='gc given Pass' status='Pass'>
-					<h6 class="step-name" title="steps.ListPageSteps.navigateToListPage()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I navigate to the list page</h6>
+					<h6 class="step-name" title="steps.AmazonSteps.iNavigateTo(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I navigate to "www.amazon.com"</h6>
 
 				</li>
-				<li test-id='5' class='gc when Pass' status='Pass'>
-					<h6 class="step-name" title="steps.ListPageSteps.searchList(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When I search Washington in the list</h6>
+				<li test-id='5' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="steps.AmazonSteps.searchesFor(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And searches for "alexa"</h6>
 
 				</li>
-				<li test-id='6' class='gc then Pass' status='Pass'>
-					<h6 class="step-name" title="steps.ListPageSteps.printAllResults()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then I print all results</h6>
+				<li test-id='6' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="steps.AmazonSteps.navigatesToTheSecondPage(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And navigates to the page "2"</h6>
 
 				</li>
-				<li test-id='7' class='gc then Pass' status='Pass'>
-					<h6 class="step-name" title="steps.ListPageSteps.findTextInList(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then I can find Seattle, Washington in the list</h6>
+				<li test-id='7' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="steps.AmazonSteps.selectTheThirdItem()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And select the third item</h6>
 
 				</li>
-			</ul>
-		</li>
-		<li test-id='9' class='node scenario Pass' status='Pass'>
-			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>As a Test Engineer, I want to validate that a text is present inside the list.</div>
-
-				<div class='category-list'>
-						<span class='category label'>@Lists</span>
-				</div>
-
-			<ul class='gc steps'>
-				<li test-id='10' class='gc given Pass' status='Pass'>
-					<h6 class="step-name" title="steps.ListPageSteps.navigateToListPage()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I navigate to the list page</h6>
-
-				</li>
-				<li test-id='11' class='gc when Pass' status='Pass'>
-					<h6 class="step-name" title="steps.ListPageSteps.searchList(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When I search Illinois in the list</h6>
-
-				</li>
-				<li test-id='12' class='gc then Pass' status='Pass'>
-					<h6 class="step-name" title="steps.ListPageSteps.printAllResults()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then I print all results</h6>
-
-				</li>
-				<li test-id='13' class='gc then Pass' status='Pass'>
-					<h6 class="step-name" title="steps.ListPageSteps.findTextInList(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then I can find Chicago, Illinois in the list</h6>
+				<li test-id='8' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="steps.AmazonSteps.iAssertThatTheItemWouldBeAvailable()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then I assert that the item would be available for purchase(user would be able to add it to the cart)</h6>
 
 				</li>
 			</ul>
 		</li>
-		<li test-id='15' class='node scenario Pass' status='Pass'>
-			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>As a Test Engineer, I want to validate that a text is present inside the list.</div>
+		<li test-id='10' class='node scenario Fail' status='Fail'>
+			<div class="step-name" title="()"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>Challenge of last class</div>
 
 				<div class='category-list'>
-						<span class='category label'>@Lists</span>
+						<span class='category label'>@challenge</span>
 				</div>
 
 			<ul class='gc steps'>
-				<li test-id='16' class='gc given Pass' status='Pass'>
-					<h6 class="step-name" title="steps.ListPageSteps.navigateToListPage()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I navigate to the list page</h6>
+				<li test-id='11' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="steps.AmazonSteps.iNavigateTo(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I navigate to "www.amazon.com"</h6>
 
 				</li>
-				<li test-id='17' class='gc when Pass' status='Pass'>
-					<h6 class="step-name" title="steps.ListPageSteps.searchList(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When I search Texas in the list</h6>
+				<li test-id='12' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="steps.AmazonSteps.searchesFor(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And searches for "playstation"</h6>
 
 				</li>
-				<li test-id='18' class='gc then Pass' status='Pass'>
-					<h6 class="step-name" title="steps.ListPageSteps.printAllResults()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then I print all results</h6>
+				<li test-id='13' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="steps.AmazonSteps.navigatesToTheSecondPage(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And navigates to the page "2"</h6>
 
 				</li>
-				<li test-id='19' class='gc then Pass' status='Pass'>
-					<h6 class="step-name" title="steps.ListPageSteps.findTextInList(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then I can find Dallas, Texas in the list</h6>
+				<li test-id='14' class='gc and Fail' status='Fail'>
+					<h6 class="step-name" title="steps.AmazonSteps.selectTheThirdItem()"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>And select the third item</h6>
 
-				</li>
-			</ul>
-		</li>
-		<li test-id='21' class='node scenario Fail' status='Fail'>
-			<div class="step-name" title="()"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>As a Test Engineer, I want to validate that a text is present inside the list.</div>
-
-				<div class='category-list'>
-						<span class='category label'>@Lists</span>
-				</div>
-
-			<ul class='gc steps'>
-				<li test-id='22' class='gc given Pass' status='Pass'>
-					<h6 class="step-name" title="steps.ListPageSteps.navigateToListPage()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I navigate to the list page</h6>
-
-				</li>
-				<li test-id='23' class='gc when Pass' status='Pass'>
-					<h6 class="step-name" title="steps.ListPageSteps.searchList(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When I search La Vizcachera Town in the list</h6>
-
-				</li>
-				<li test-id='24' class='gc then Pass' status='Pass'>
-					<h6 class="step-name" title="steps.ListPageSteps.printAllResults()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then I print all results</h6>
-
-				</li>
-				<li test-id='25' class='gc then Fail' status='Fail'>
-					<h6 class="step-name" title="steps.ListPageSteps.findTextInList(java.lang.String)"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>Then I can find La Vizcachera, Cba in the list</h6>
-
-							<textarea disabled class="code-block">java.lang.Error: The text in no in the list: FAILED
-	at steps.ListPageSteps.findTextInList(ListPageSteps.java:32)
-	at ✽.I can find La Vizcachera, Cba in the list(file:///C:/Automation/practicas/java-selenium/practica-ger/src/test/resources/features/ListPage.feature:8)
+							<textarea disabled class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[@id='add-to-cart-button'] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.6.0', revision: '79f1c02ae20'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.71, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\U0105420\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52343}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52343/devtoo..., se:cdpVersion: 108.0.5359.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: cd6787432e8bf9b331740997bfbe49f5
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at pages.BasePage.Find(BasePage.java:54)
+	at pages.BasePage.clickElement(BasePage.java:61)
+	at pages.AmazonPage.addItemToCart(AmazonPage.java:41)
+	at steps.AmazonSteps.selectTheThirdItem(AmazonSteps.java:26)
+	at ✽.select the third item(file:///C:/Automation/practicas/java-selenium/practica-ger/src/test/resources/features/Amazon.feature:8)
 </textarea>
 				</li>
-				<li test-id='26' class='gc * Pass' status='Pass'>
+				<li test-id='15' class='gc then Skip' status='Skip'>
+					<h6 class="step-name" title="steps.AmazonSteps.iAssertThatTheItemWouldBeAvailable()"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>Then I assert that the item would be available for purchase(user would be able to add it to the cart)</h6>
+
+							<div class="node-step">Step skipped</div>
+				</li>
+				<li test-id='16' class='gc * Pass' status='Pass'>
 					<h6 class="step-name" title="AFTER"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>steps.Hooks.tearDown(io.cucumber.java.Scenario)</h6>
 
-							<div class="node-step">As a Test Engineer, I want to validate that a text is present inside the list.</div>
+							<div class="node-step">Challenge of last class</div>
 							<div class='screenshots'>
 								<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../screenshots/embedded1.png' src='../screenshots/embedded1.png'>
+							</div>
+							<div class="node-step">Escenario fallando, referirse a la imagen adjunta.</div>
+				</li>
+			</ul>
+		</li>
+		<li test-id='17' class='node scenario Fail' status='Fail'>
+			<div class="step-name" title="()"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>Challenge of last class</div>
+
+				<div class='category-list'>
+						<span class='category label'>@challenge</span>
+				</div>
+
+			<ul class='gc steps'>
+				<li test-id='18' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="steps.AmazonSteps.iNavigateTo(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I navigate to "www.amazon.com"</h6>
+
+				</li>
+				<li test-id='19' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="steps.AmazonSteps.searchesFor(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And searches for "laptop dell"</h6>
+
+				</li>
+				<li test-id='20' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="steps.AmazonSteps.navigatesToTheSecondPage(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And navigates to the page "2"</h6>
+
+				</li>
+				<li test-id='21' class='gc and Fail' status='Fail'>
+					<h6 class="step-name" title="steps.AmazonSteps.selectTheThirdItem()"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>And select the third item</h6>
+
+							<textarea disabled class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[@id='add-to-cart-button'] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.6.0', revision: '79f1c02ae20'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.71, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\U0105420\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52343}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52343/devtoo..., se:cdpVersion: 108.0.5359.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: cd6787432e8bf9b331740997bfbe49f5
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at pages.BasePage.Find(BasePage.java:54)
+	at pages.BasePage.clickElement(BasePage.java:61)
+	at pages.AmazonPage.addItemToCart(AmazonPage.java:41)
+	at steps.AmazonSteps.selectTheThirdItem(AmazonSteps.java:26)
+	at ✽.select the third item(file:///C:/Automation/practicas/java-selenium/practica-ger/src/test/resources/features/Amazon.feature:8)
+</textarea>
+				</li>
+				<li test-id='22' class='gc then Skip' status='Skip'>
+					<h6 class="step-name" title="steps.AmazonSteps.iAssertThatTheItemWouldBeAvailable()"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>Then I assert that the item would be available for purchase(user would be able to add it to the cart)</h6>
+
+							<div class="node-step">Step skipped</div>
+				</li>
+				<li test-id='23' class='gc * Pass' status='Pass'>
+					<h6 class="step-name" title="AFTER"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>steps.Hooks.tearDown(io.cucumber.java.Scenario)</h6>
+
+							<div class="node-step">Challenge of last class</div>
+							<div class='screenshots'>
+								<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../screenshots/embedded2.png' src='../screenshots/embedded2.png'>
 							</div>
 							<div class="node-step">Escenario fallando, referirse a la imagen adjunta.</div>
 				</li>
@@ -373,16 +394,16 @@
 			<ul id='category-collection' class='category-collection'>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@Lists</span>
+						<span class='category-name'>@challenge</span>
 						<span class='category-status right'>
-						<span class='label pass'>3</span>
-						<span class='label fail'>1</span>
+						<span class='label pass'>1</span>
+						<span class='label fail'>2</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 3</span>
-							<span status="fail" class='label red lighten-1 white-text'>Failed: 1</span>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							<span status="fail" class='label red lighten-1 white-text'>Failed: 2</span>
 							
 						</div>
 						<div class='category-tests'>
@@ -396,23 +417,18 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>nov. 25, 2022 03:30:15 p. m.</td>
-										<td class='linked' test-id='3'>As a Test Engineer, I want to validate that a text is present inside the list.</td>
+										<td>dic. 5, 2022 03:11:58 p. m.</td>
+										<td class='linked' test-id='3'>Challenge of last class</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 									<tr>
-										<td>nov. 25, 2022 03:30:24 p. m.</td>
-										<td class='linked' test-id='9'>As a Test Engineer, I want to validate that a text is present inside the list.</td>
-										<td><span class='test-status Pass'>Pass</span></td>
+										<td>dic. 5, 2022 03:13:06 p. m.</td>
+										<td class='linked' test-id='10'>Challenge of last class</td>
+										<td><span class='test-status Fail'>Fail</span></td>
 									</tr>
 									<tr>
-										<td>nov. 25, 2022 03:30:27 p. m.</td>
-										<td class='linked' test-id='15'>As a Test Engineer, I want to validate that a text is present inside the list.</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>nov. 25, 2022 03:30:31 p. m.</td>
-										<td class='linked' test-id='21'>As a Test Engineer, I want to validate that a text is present inside the list.</td>
+										<td>dic. 5, 2022 03:13:54 p. m.</td>
+										<td class='linked' test-id='17'>Challenge of last class</td>
 										<td><span class='test-status Fail'>Fail</span></td>
 									</tr>
 								</tbody>
@@ -449,8 +465,8 @@
 			<ul id='exception-collection' class='exception-collection'>
 				<li class='exception displayed active'>
 					<div class='exception-heading'>
-						<span class='exception-name'>java.lang.Error</span>
-						<span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
+						<span class='exception-name'>org.openqa.selenium.TimeoutException</span>
+						<span class='exception-count right'><span class='label red lighten-1 white-text'>2</span></span>
 					</div>
 					<div class='exception-content hide'>
 						<div class='exception-tests'>
@@ -464,12 +480,42 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>nov. 25, 2022 03:30:32 p. m.</td>
-										<td class='linked' test-id='25'>Then I can find La Vizcachera, Cba in the list</td>
+										<td>dic. 5, 2022 03:13:29 p. m.</td>
+										<td class='linked' test-id='14'>And select the third item</td>
 										<td>
-											<textarea disabled class="code-block">java.lang.Error: The text in no in the list: FAILED
-	at steps.ListPageSteps.findTextInList(ListPageSteps.java:32)
-	at ✽.I can find La Vizcachera, Cba in the list(file:///C:/Automation/practicas/java-selenium/practica-ger/src/test/resources/features/ListPage.feature:8)
+											<textarea disabled class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[@id='add-to-cart-button'] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.6.0', revision: '79f1c02ae20'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.71, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\U0105420\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52343}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52343/devtoo..., se:cdpVersion: 108.0.5359.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: cd6787432e8bf9b331740997bfbe49f5
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at pages.BasePage.Find(BasePage.java:54)
+	at pages.BasePage.clickElement(BasePage.java:61)
+	at pages.AmazonPage.addItemToCart(AmazonPage.java:41)
+	at steps.AmazonSteps.selectTheThirdItem(AmazonSteps.java:26)
+	at ✽.select the third item(file:///C:/Automation/practicas/java-selenium/practica-ger/src/test/resources/features/Amazon.feature:8)
+</textarea>
+										</td>
+									</tr>
+									<tr>
+										<td>dic. 5, 2022 03:14:11 p. m.</td>
+										<td class='linked' test-id='21'>And select the third item</td>
+										<td>
+											<textarea disabled class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[@id='add-to-cart-button'] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.6.0', revision: '79f1c02ae20'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.71, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\U0105420\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52343}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52343/devtoo..., se:cdpVersion: 108.0.5359.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: cd6787432e8bf9b331740997bfbe49f5
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at pages.BasePage.Find(BasePage.java:54)
+	at pages.BasePage.clickElement(BasePage.java:61)
+	at pages.AmazonPage.addItemToCart(AmazonPage.java:41)
+	at steps.AmazonSteps.selectTheThirdItem(AmazonSteps.java:26)
+	at ✽.select the third item(file:///C:/Automation/practicas/java-selenium/practica-ger/src/test/resources/features/Amazon.feature:8)
 </textarea>
 										</td>
 									</tr>
@@ -501,7 +547,7 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Scenarios
-					<div class='panel-lead'>4</div>
+					<div class='panel-lead'>3</div>
 				</div>
 			</div>
 			<div class='col s2'>
@@ -513,19 +559,19 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>nov. 25, 2022 03:30:14 p. m.</div>
+					<div class='panel-lead'>dic. 5, 2022 03:11:55 p. m.</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>nov. 25, 2022 03:30:32 p. m.</div>
+			 		<div class='panel-lead'>dic. 5, 2022 03:14:28 p. m.</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>00 00 17.904</div>
+					<div class='panel-lead'>00 02 32.764</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -541,12 +587,12 @@
 							<th>Passed %</th>
 						</tr>
 						<tr>
-							<td>@Lists</td>
-							<td>3</td>
+							<td>@challenge</td>
 							<td>1</td>
+							<td>2</td>
 							<td>0</td>
 							<td>
-									75%
+									33,333%
 							</td>
 						</tr>
 					</table>
@@ -567,28 +613,28 @@
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				childCount: 4,
-				passChild: 3,
-				failChild: 1,
+				childCount: 3,
+				passChild: 1,
+				failChild: 2,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
 				grandChildCount: 17,
-				passGrandChild: 16,
-				failGrandChild: 1,
+				passGrandChild: 13,
+				failGrandChild: 2,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
-				skipGrandChild: 0,
+				skipGrandChild: 2,
 				infoGrandChild: 0,
 			};
 			</script>
 		
 		<script>
 			var timeline = {
-			        "Test different actions on a list Page":17.015
+			        "Challenge of last class":150.086
 			};
 		</script>
 		
