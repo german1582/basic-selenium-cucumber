@@ -22,7 +22,7 @@ public class BasePage {
 
     // bloque estatico que se va a ejecutar al comienzo
     static {
-        System.setProperty("webdriver.chrome.driver", "C:\\Automation\\practicas\\java-selenium\\practica-ger\\src\\main\\resources\\drivers\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "D:\\AUTOMATION\\practicas\\java-selenium\\practica-ger\\src\\main\\resources\\drivers\\chromedriver.exe");
         ChromeOptions chromeOptions = new ChromeOptions();
         driver = new ChromeDriver(chromeOptions);
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
